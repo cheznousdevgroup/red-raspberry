@@ -1,0 +1,21 @@
+---
+const highlights = [
+{ kpi: '98', unit: '%', label: 'Satisfaction clients' },
+{ kpi: '200+', unit: '', label: 'Projets livrés' },
+{ kpi: '<1', unit: 's', label: 'Time‑to‑Interactive' },
+];
+---
+<section id="atouts" class="py-16 bg-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="rounded-3xl bg-gradient-to-br from-slate-900 to-slate-700 text-white p-10">
+<div class="grid sm:grid-cols-3 gap-8 text-center">
+{highlights.map((h) => (
+<div>
+<div class="text-4xl font-extrabold tracking-tight">{h.kpi}<span class="text-indigo-300">{h.unit}</span></div>
+<div class="mt-1 text-indigo-100">{h.label}</div>
+</div>
+))}
+</div>
+</div>
+</div>
+</section>

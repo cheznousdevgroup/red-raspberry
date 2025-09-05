@@ -1,0 +1,20 @@
+---
+const items = [
+{ quote: 'Une équipe sérieuse et réactive. Notre trafic a doublé en 3 mois.', author: 'A. Kouamé, DG' },
+{ quote: 'Design moderne et performances au rendez-vous. Je recommande !', author: 'M. Traoré, Entrepreneure' },
+{ quote: 'Migration fluide et excellent support. Bravo.', author: 'L. N’Guessan, CTO' },
+];
+---
+<section id="temoignages" class="py-20">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-slate-900">Ils nous font confiance</h2>
+<div class="mt-10 grid md:grid-cols-3 gap-6">
+{items.map((t) => (
+<figure class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm">
+<blockquote class="text-slate-700">“{t.quote}”</blockquote>
+<figcaption class="mt-4 text-sm text-slate-500">— {t.author}</figcaption>
+</figure>
+))}
+</div>
+</div>
+</section>
